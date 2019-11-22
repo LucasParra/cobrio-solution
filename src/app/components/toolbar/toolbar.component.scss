@@ -1,0 +1,17 @@
+#toolbar-container {
+  max-height: var(--toolbar-height);
+  border-bottom: 1px solid #eaeef4;
+  justify-content: space-between;
+  &,
+  & * {
+    align-items: center;
+  }
+  .profile-container {
+    * {
+      padding: 5px;
+    }
+    span {
+      color: #002d4f;
+    }
+  }
+}

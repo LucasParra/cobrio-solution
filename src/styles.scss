@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+// Global helpers
+@import './styles/variables';
+@import './styles/layout';
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  height: calc(100vh - 3px);
+  border: 1px solid #eaeef4;
+}

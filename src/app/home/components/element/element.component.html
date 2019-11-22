@@ -1,0 +1,19 @@
+<p
+  class="py--20 pl--20 border-box"
+  *ngIf="getKeys(item).length > 0 && (item.element || item.title)"
+>
+  <span>
+    {{ item.element ? item.element.title : item.title }}
+  </span>
+  <button
+    *ngIf="item.element || item.title"
+    (click)="detailsItem(item.element ? item.element.id : item.id)"
+  >
+    <span>
+      See Details
+    </span>
+    <i class="material-icons">
+      remove_red_eye
+    </i>
+  </button>
+</p>

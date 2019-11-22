@@ -1,0 +1,23 @@
+p {
+  background: #ffffff;
+  width: 97%;
+  border: 1px solid #e5e9ed;
+  font-size: 24px;
+  color: #00124f;
+  font-weight: 700;
+  button {
+    float: right;
+    margin-right: 20px;
+  }
+}
+button i {
+  display: none;
+}
+@media (max-width: 425px) {
+  button i {
+    display: inline-block;
+  }
+  button span {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="pa--20" id="sidebar-container">
+  <div class="pa--10">
+    <img src="/assets/site-image.png" />
+    <a class="display-block text-center site-title" href="https://hairstylist.com/" target="_blank"
+      >hairstylist.com</a
+    >
+  </div>
+  <ul class="pa--5">
+    <li class="pa--15" *ngFor="let item of items" [innerHTML]="item"></li>
+  </ul>
+</div>

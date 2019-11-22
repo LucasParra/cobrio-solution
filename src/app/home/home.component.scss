@@ -1,0 +1,15 @@
+.home-route {
+  width: calc(100% - var(--side-bar-size));
+  height: calc(100vh - (var(--toolbar-height) + 71px));
+  box-sizing: border-box;
+  overflow: auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  .home-route {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+  }
+}

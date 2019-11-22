@@ -1,0 +1,93 @@
+body {
+  font-family: 'Soleil', sans-serif;
+}
+
+$num: 5;
+@while $num <= 50 {
+  .pt--#{$num} {
+    padding-top: #{$num}px;
+  }
+
+  .pb--#{$num} {
+    padding-bottom: #{$num}px;
+  }
+
+  .pl--#{$num} {
+    padding-left: #{$num}px;
+  }
+
+  .pr--#{$num} {
+    padding-right: #{$num}px;
+  }
+
+  .pa--#{$num} {
+    padding: #{$num}px;
+  }
+
+  .px--#{$num} {
+    padding-left: #{$num}px;
+    padding-right: #{$num}px;
+  }
+
+  .py--#{$num} {
+    padding-top: #{$num}px;
+    padding-bottom: #{$num}px;
+  }
+
+  .mt--#{$num} {
+    margin-top: #{$num}px !important;
+  }
+
+  .mb--#{$num} {
+    margin-bottom: #{$num}px !important;
+  }
+
+  .ml--#{$num} {
+    margin-left: #{$num}px !important;
+  }
+
+  .mr--#{$num} {
+    margin-right: #{$num}px !important;
+  }
+
+  .ma--#{$num} {
+    margin: #{$num}px !important;
+  }
+
+  .mx--#{$num} {
+    margin-left: #{$num}px !important;
+    margin-right: #{$num}px !important;
+  }
+
+  .my--#{$num} {
+    margin-top: #{$num}px !important;
+    margin-bottom: #{$num}px !important;
+  }
+  $num: $num + 5;
+}
+
+.bck-light-blue {
+  background-color: #f4f9fc;
+}
+.display-flex {
+  display: flex;
+}
+.display-block {
+  display: block;
+}
+.text-center {
+  text-align: center;
+}
+.border-box {
+  box-sizing: border-box;
+}
+
+button {
+  background: #0087ef;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}

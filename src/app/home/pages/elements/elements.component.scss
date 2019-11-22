@@ -1,0 +1,32 @@
+:host {
+  display: block;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.children {
+  margin: 5px 0px 5px 35px;
+  max-width: 100%;
+}
+input {
+  border: 1px solid #e5e9ed;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}
+::placeholder {
+  color: #4c6c83;
+  opacity: 0.5;
+}
+
+@media (max-width: 375px) {
+  :host {
+    padding: 0px;
+  }
+  .children {
+    margin: 5px 0px 5px 10px;
+  }
+  input {
+    margin-left: 3px !important;
+  }
+}

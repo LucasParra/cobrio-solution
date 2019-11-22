@@ -1,0 +1,28 @@
+<div class="display-flex">
+  <input
+    [(ngModel)]="search"
+    (input)="filterItems()"
+    style="flex: 0.97"
+    type="text"
+    class="ml--35 display-flex pa--10"
+    placeholder="Search"
+  />
+</div>
+<div class="display-flex" *ngIf="allItems !== {}">
+  <ng-template
+    [ngTemplateOutlet]="nodeTemplateRef"
+    [ngTemplateOutletContext]="{ $implicit: allItems }"
+  >
+  </ng-template>
+
+  <ng-template #nodeTemplateRef let-item>
+    <div style="width:100%">
+      <app-element [item]="item"></app-element>
+
+      <div *ngIf="item.childrens" class="children">
+        <ng-template ngFor [ngForOf]="item.childrens" [ngForTemplate]="nodeTemplateRef">
+        </ng-template>
+      </div>
+    </div>
+  </ng-template>
+</div>

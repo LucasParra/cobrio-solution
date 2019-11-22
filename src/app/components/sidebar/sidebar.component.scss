@@ -1,0 +1,17 @@
+:host {
+  width: var(--side-bar-size);
+  display: inline-block;
+}
+.site-title {
+  color: #002d4f !important;
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+  color: #4c6c83;
+}
+@media (max-width: 768px) {
+  #sidebar-container {
+    display: none;
+  }
+}
